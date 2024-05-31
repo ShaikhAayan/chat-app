@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/chat.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./Chat App_files/style.css">
+  </head>
+  <body>
+    <!-- Person selector -->
+    <div class="person-selector">
+      <button class="button person-selector-button active-person" id="john-selector">aayan</button>
+      <button class="button person-selector-button" id="jane-selector">babli</button>
+    </div>
+    <div class="chat-container">
+      <h2 class="chat-header">Aayan chatting...</h2>
+
+      <div class="chat-messages">
+        <div class="message blue-bg">
+          <div class="message-sender">Aayan</div>
+          <div class="message-text">Hey babli, what's up? call kiya tha 
+          </div>
+          <div class="message-timestamp">10:30 pm</div>
+        </div>
+        <div class="message gray-bg">
+          <div class="message-sender">babli</div>
+          <div class="message-text">oyee sunn na </div>
+          <div class="message-timestamp">10:35 pm</div>
+        </div>
+      
+  <div class="message gray-bg">
+    <div class="message-sender">Jane</div>
+    <div class="message-text">j</div>
+    <div class="message-timestamp">11:57 PM</div>
+  </div>
+</div>
+
+      <form class="chat-input-form">
+        <input type="text" class="chat-input" required="" placeholder="Type here.......">
+        <button type="submit" class="button send-button">Send</button>
+      </form>
+      <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+
+    <script src="./Chat App_files/call.js.download"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<img id="translator-icon" src="chrome-extension://gpahcnbjaopcgcpdjnjcmkllkcipbmjk/icons/icon-128.png" style="display: none; top: 926.819px; left: 1630.36px;"><div id="translator-container" style="display: none;">
+<div class="rapid-header">
+  <img сlass="rapid-logo" src="chrome-extension://gpahcnbjaopcgcpdjnjcmkllkcipbmjk/icons/logo.svg">
+  <img сlass="rapid-icon" id="rapid-copy" src="chrome-extension://gpahcnbjaopcgcpdjnjcmkllkcipbmjk/icons/copy.svg">
+</div><div id="rapid-text-wrapper"><span></span></div>
+
+<div class="rapid-footer">
+  <span id="rapid-first-language">ENG</span>
+  <img id="rapid-arrow-icon" src="chrome-extension://gpahcnbjaopcgcpdjnjcmkllkcipbmjk/icons/r-arrow.svg">
+  <span id="rapid-second-language">FRN</span>
+</div></div></body></html>
